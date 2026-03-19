@@ -6,6 +6,8 @@ import CallbackForm from '../components/CallbackForm';
 
 export default function Contact() {
   const { t } = useTranslation();
+  const siteUrl = "https://ais-pre-2yfx42lzh74iljtdmp3xx7-150601437327.europe-west2.run.app/contact";
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -45,14 +47,22 @@ export default function Contact() {
     if (!isFormValid) return;
     // Format message for WhatsApp
     const text = `Name: ${formData.name}%0APhone: ${formData.phone}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/22941745959?text=${text}`, '_blank');
+    window.open(`https://wa.me/2290196279621?text=${text}`, '_blank');
   };
 
   return (
     <main>
       <Helmet>
-        <title>{t('contact.title')} | HBM Informatique</title>
-        <meta name="description" content="Get in touch with HBM Informatique in Cotonou. Call us at +229 41 74 59 59 or send us a message for IT support." />
+        <title>{t('contact.title')} | HBM Informatique - Get in Touch</title>
+        <meta name="description" content="Contact HBM Informatique for reliable IT support in Cotonou. Call us at (+229) 01 41 74 59 59 or visit our office for expert assistance." />
+        <meta name="keywords" content="Contact HBM Informatique, IT Support Cotonou, Computer Repair Help, Tech Support Benin" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content="Contact Us | HBM Informatique" />
+        <meta property="og:description" content="Need IT support? Reach out to HBM Informatique today for professional solutions." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1200&h=630&q=80" />
       </Helmet>
 
       <div className="bg-slate-900 py-20">
@@ -79,8 +89,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-slate-900 mb-1">{t('contact.phone')}</h3>
-                    <p className="text-slate-600"><a href="tel:+22941745959" className="hover:text-blue-600">+229 41 74 59 59</a></p>
-                    <p className="text-slate-600"><a href="tel:+22986279621" className="hover:text-blue-600">+229 86 27 96 21</a></p>
+                    <p className="text-slate-600"><a href="tel:+2290196279621" className="hover:text-blue-600">(+229) 01 96 27 96 21</a></p>
+                    <p className="text-slate-600"><a href="tel:+2290141745959" className="hover:text-blue-600">(+229) 01 41 74 59 59</a></p>
                   </div>
                 </div>
 
@@ -90,7 +100,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-slate-900 mb-1">{t('contact.email')}</h3>
-                    <p className="text-slate-600"><a href="mailto:mk656790@gmail.com" className="hover:text-blue-600">mk656790@gmail.com</a></p>
+                    <p className="text-slate-600"><a href="mailto:m46567961@gmail.com" className="hover:text-blue-600">m46567961@gmail.com</a></p>
                   </div>
                 </div>
 

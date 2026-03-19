@@ -81,7 +81,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/22941745959?text=Hello,%20I%20would%20like%20a%20quote%20for%20your%20services"
+                href="https://wa.me/2290196279621?text=Hello,%20I%20would%20like%20a%20quote%20for%20your%20services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`block w-full text-center py-3 px-6 rounded-xl font-semibold transition-colors ${

@@ -180,6 +180,10 @@ const resources = {
       },
       floating: {
         chat: "Chat with us!"
+      },
+      gallery: {
+        title: "Our Work in Action",
+        subtitle: "Take a look at our recent projects, IT setups, and behind-the-scenes moments."
       }
     }
   },
@@ -361,6 +365,10 @@ const resources = {
       },
       floating: {
         chat: "Discutez avec nous !"
+      },
+      gallery: {
+        title: "Notre Travail en Action",
+        subtitle: "Découvrez nos projets récents, nos installations informatiques et nos moments en coulisses."
       }
     }
   }

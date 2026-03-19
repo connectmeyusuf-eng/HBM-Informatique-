@@ -38,7 +38,7 @@ export default function CallbackForm() {
     e.preventDefault();
     if (!isFormValid) return;
     const text = `Hello, I would like to request a callback.%0AMy name is: ${formData.name}%0AMy phone number is: ${formData.phone}`;
-    window.open(`https://wa.me/22941745959?text=${text}`, '_blank');
+    window.open(`https://wa.me/2290196279621?text=${text}`, '_blank');
   };
 
   return (

@@ -11,8 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <MonitorSmartphone className="h-8 w-8 text-blue-500" />
-              <span className="font-bold text-xl text-white">HBM Informatique</span>
+              <img src="https://image2url.com/r2/default/images/1773839036246-fd8343fc-be31-46e7-983d-813bcaf3ad2b.jpg" alt="HBM Informatique" className="h-10 w-auto bg-white p-1.5 rounded-lg" referrerPolicy="no-referrer" />
             </Link>
             <p className="text-sm text-slate-400 mb-4">
               "Entrepreneur à succès et exemple de réussite"
@@ -53,13 +52,13 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-blue-500 shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:+22941745959" className="hover:text-white transition-colors">+229 41 74 59 59</a>
-                  <a href="tel:+22986279621" className="hover:text-white transition-colors">+229 86 27 96 21</a>
+                  <a href="tel:+2290196279621" className="hover:text-white transition-colors">(+229) 01 96 27 96 21</a>
+                  <a href="tel:+2290141745959" className="hover:text-white transition-colors">(+229) 01 41 74 59 59</a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-blue-500 shrink-0" />
-                <a href="mailto:mk656790@gmail.com" className="hover:text-white transition-colors">mk656790@gmail.com</a>
+                <a href="mailto:m46567961@gmail.com" className="hover:text-white transition-colors">m46567961@gmail.com</a>
               </li>
             </ul>
             <div className="flex gap-4 mt-6">

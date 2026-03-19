@@ -28,8 +28,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
-              <MonitorSmartphone className="h-8 w-8 text-blue-600" />
-              <span className="font-bold text-xl text-slate-900">HBM Informatique</span>
+              <img src="https://image2url.com/r2/default/images/1773839036246-fd8343fc-be31-46e7-983d-813bcaf3ad2b.jpg" alt="HBM Informatique" className="h-10 w-auto" referrerPolicy="no-referrer" />
             </Link>
           </div>
           
@@ -57,7 +56,7 @@ export default function Navbar() {
             </button>
 
             <a
-              href="https://wa.me/22941745959?text=Hello,%20I%20need%20your%20IT%20services"
+              href="https://wa.me/2290196279621?text=Hello,%20I%20need%20your%20IT%20services"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors"
@@ -103,7 +102,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/22941745959?text=Hello,%20I%20need%20your%20IT%20services"
+              href="https://wa.me/2290196279621?text=Hello,%20I%20need%20your%20IT%20services"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center mt-4 bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"

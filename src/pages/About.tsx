@@ -4,12 +4,21 @@ import { useTranslation } from 'react-i18next';
 
 export default function About() {
   const { t } = useTranslation();
+  const siteUrl = "https://ais-pre-2yfx42lzh74iljtdmp3xx7-150601437327.europe-west2.run.app/about";
 
   return (
     <main>
       <Helmet>
-        <title>{t('about.title')}</title>
-        <meta name="description" content="Learn about HBM Informatique, led by CEO M. Marius Kounma. We are a leading IT services provider in Cotonou, Benin." />
+        <title>{t('about.title')} | HBM Informatique - Our Story & Mission</title>
+        <meta name="description" content="Learn about HBM Informatique, led by CEO M. Marius Kounma. Discover our mission to provide top-tier IT services and computer solutions in Cotonou, Benin." />
+        <meta name="keywords" content="About HBM Informatique, Marius Kounma, IT Company Benin, Cotonou IT Experts" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content="About HBM Informatique | Our Story & Mission" />
+        <meta property="og:description" content="Discover the team and mission behind Cotonou's leading IT service provider." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&h=630&q=80" />
       </Helmet>
 
       <div className="bg-slate-900 py-20">
@@ -47,6 +56,7 @@ export default function About() {
                 <img 
                   src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80" 
                   alt="IT Professionals working" 
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
